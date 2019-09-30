@@ -5,12 +5,14 @@
 > 解决方案管理器中右键CMakeLists.txt，更改CMake设置:
   generator: `Ninja` => `Visual Studio 15 2017`
 
+
 ```xml
 x86:
 "generator": "Visual Studio 15 2017",
-
+"buildCommandArgs": "-m -v:minimal",
 x64:
 "generator": "Visual Studio 15 2017 Win64",
+"buildCommandArgs": "-m -v:minimal",
 ```
 
 ### launch.vs.json
